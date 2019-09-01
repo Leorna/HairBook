@@ -3,7 +3,7 @@ include "database-manager.php";
 
 $db_manager = new DBManager();
 $note = $_POST["note"];
-$title = $_POST["title"];
+$title = $_POST["title"] or 'Sem título';
 $user = $_POST["user"];
 
 $there_is_connection = $db_manager->there_is_connection();
