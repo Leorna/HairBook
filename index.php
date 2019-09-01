@@ -21,7 +21,7 @@ session_abort();
     <div class="top-bar">
         <div class="top-bar-left">
             <ul class="menu">
-                <li class="menu-text"><a target="_blank" href="https://github.com/Leorna/HairBook">HairBook github</a></li>
+                <li class="menu-text"><a target="_blank" href="https://github.com/Leorna/Hairbook">HairBook github</a></li>
             </ul>
         </div>
     </div>
@@ -41,7 +41,7 @@ session_abort();
         </div>
         <div class="medium-6 columns medium-pull-6 text-center">
             <h2>Our selves</h2>
-            <p>I am a science computer student, who is learning how to make web sites.</p>
+            <p>We are science computer students, who are learning how to make web sites.</p>
         </div>
     </div>
 
