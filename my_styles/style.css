@@ -1,0 +1,30 @@
+img {
+    margin-left: 525px;
+    width: 25%;
+    height: 35%;
+}
+
+#template-content-body {
+    display: none;
+}
+
+a.button {
+    color: white;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.take-note-grid {
+    display: none;
+}
+
+.hairbook-elements {
+    margin-left: 20px;
+}
+
