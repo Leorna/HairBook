@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 
+<?php
+require "php-scripts/session.php";
+show_error(); 
+?>
+
 
 <html>
 
@@ -18,10 +23,6 @@
         <div class="top-bar-left">
             <ul class="menu">
                 <li class="menu-text"><a href="index.php">HairBook</a></li>
-                <?php
-                require "php-scripts/session.php";
-                show_error(); 
-                ?>
             </ul>
         </div>
     </div>

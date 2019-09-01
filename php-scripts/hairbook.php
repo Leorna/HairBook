@@ -4,6 +4,11 @@
 session_start();
 $user = $_SESSION["name-user"];
 $error = $_SESSION["error"];
+
+if ($error) {
+    echo "<script>alert({$error})</script>";
+}
+
 ?>
 
 <html>
@@ -25,15 +30,10 @@ $error = $_SESSION["error"];
                 <li class="menu-text"><?=$user;?></li>
                 <li class="menu-text">HairBook</li>
                 <li><button class="button hairbook-elements" id="take-note-button">Take a note</button></li>
-                <li><button><a class="button hairbook-elements" href="../index.php">Sair</a></button></li>
+                <li><button><a class="button hairbook-elements" href="../index.php">Logout</a></button></li>
                 <li>
                     <form method="post" action=""><input class="button hairbook-elements" type="submit" value="Change hair type"></form>
                 </li>
-                <?php 
-                if ($error) {
-                    echo "<li class='menu-text'>$error</li>";
-                }
-                ?>
             </ul>
         </div>
     </div>

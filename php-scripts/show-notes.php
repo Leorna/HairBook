@@ -12,7 +12,7 @@ if ($db_manager->there_is_connection()) {
         if ($user == $tuple["name_user"]) {
             echo <<<EOT
             <div class='callout text-center'>
-                <p class='menu-text'>Title: {$tuple['title']}</p><p>Note: {$tuple['note']}</p>
+                <p class='menu-text'>Title: {$tuple['title']}</p><p>Note: {$tuple['note']}</p><br>
                 <form method="post" action="hairbook-update.php">
                     <input type="hidden" name="user" value="{$user}">
                     <input type="hidden" name="id" value="{$tuple['id']}">
