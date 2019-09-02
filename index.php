@@ -18,23 +18,21 @@ session_abort();
 </head>
   
 <body>
-    <div class="top-bar">
-        <div class="top-bar">
-            <ul class="menu">
-                <li class="menu-text"><a target="_blank" href="https://github.com/Leorna/Hairbook">HairBook github</a></li>
-            </ul>
-            <ul class="menu tabs" data-tabs id="example-tabs">
-                <li style="text-align:center;" class="menu-text tabs-title is-active"><a class="button large hollow" href="#panel1" aria-selected="true">Sign Up</a></li>
-                <li style="text-align:center;" class="menu-text tabs-title"><a class="button large hollow" data-tabs-target="panel2" href="#panel2">Sign In</a></li>
-            </ul>
-
-        </div>
-
-        <div class="top-bar-right text-center">
+    <div class="top-bar bar-color">
+        <div class="top-bar-left text-center">
             <h1>HairBook</h1>
             <h3>Have control about your hair</h3>
             <p class="lead">Take notes about what you do on it</p>
         </div>
+
+        
+        <ul class="bar-color menu tabs" data-tabs id="example-tabs">
+            <li style="text-align:center;" class="bar-color menu-text tabs-title is-active"><a class="button large" href="#panel1" aria-selected="true">Sign Up</a></li>
+            <li style="text-align:center;" class="bar-color menu-text tabs-title"><a class="button large" data-tabs-target="panel2" href="#panel2">Sign In</a></li>
+        </ul>
+        <ul class="bar-color menu">
+            <li class="bar-color menu-text"><a target="_blank" href="https://github.com/Leorna/Hairbook">HairBook github</a></li>
+        </ul>
         
     </div>
 
@@ -59,8 +57,8 @@ session_abort();
                         <label for="pass-confirm">Confirm password</label>
                         <input type="password" id="pass-confirm" name="confirm-password" placeholder="Confirm password">
                     </div>
-                    <button type="button" class="button expanded" id="create-account" onclick="showPwordCreate()">Show passwords</button>
-                    <input class="button expanded" type="submit" value="Sign up">
+                    <button type="button" class="bar-color button expanded" id="create-account" onclick="showPwordCreate()">Show passwords</button>
+                    <input class="bar-color button expanded" type="submit" value="Sign up">
                 </form>
             </div>
         </div>
@@ -76,8 +74,8 @@ session_abort();
                         <label for="pass">Password</label>
                         <input type="password" id="passlogin" name="password" placeholder="Password">
                     </div>
-                    <button type="button" class="button expanded" id="login" onclick="showPwordLogin()">Show password</button>
-                    <input class="button expanded" type="submit" value="Sign in">
+                    <button type="button" class="bar-color button expanded" id="login" onclick="showPwordLogin()">Show password</button>
+                    <input class="bar-color button expanded" type="submit" value="Sign in">
                 </form>  
             </div> 
         </div>
