@@ -26,8 +26,8 @@ if ($error) {
 <body>
     <div class="bar-color top-bar" style="margin-bottom: 10px;">
         <ul class="bar-color menu">
-            <li class="bar-color menu-text"><?=$user;?></li>
-            <li class="bar-color menu-text">HairBook</li>
+            <li class="white-color bar-color menu-text"><?=$user;?></li>
+            <li class="white-color bar-color menu-text">HairBook</li>
             <li class="bar-color"><button class="button hairbook-elements" id="take-note-button">Take a note</button></li>
             <li class="bar-color"><button><a class="button hairbook-elements" href="../index.php">Logout</a></button></li>
             <li class="bar-color">
