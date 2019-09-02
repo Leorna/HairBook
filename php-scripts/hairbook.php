@@ -24,18 +24,16 @@ if ($error) {
 </head>
 
 <body>
-    <div class="top-bar" style="margin-bottom: 10px;">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text"><?=$user;?></li>
-                <li class="menu-text">HairBook</li>
-                <li><button class="button hairbook-elements" id="take-note-button">Take a note</button></li>
-                <li><button><a class="button hairbook-elements" href="../index.php">Logout</a></button></li>
-                <li>
-                    <form method="post" action=""><input class="button hairbook-elements" type="submit" value="Change hair type"></form>
-                </li>
-            </ul>
-        </div>
+    <div class="bar-color top-bar" style="margin-bottom: 10px;">
+        <ul class="bar-color menu">
+            <li class="bar-color menu-text"><?=$user;?></li>
+            <li class="bar-color menu-text">HairBook</li>
+            <li class="bar-color"><button class="button hairbook-elements" id="take-note-button">Take a note</button></li>
+            <li class="bar-color"><button><a class="button hairbook-elements" href="../index.php">Logout</a></button></li>
+            <li class="bar-color">
+                <form method="post" action=""><input class="button hairbook-elements" type="submit" value="Change hair type"></form>
+            </li>
+        </ul>
     </div>
     
     <div class="grid-container take-note-grid">

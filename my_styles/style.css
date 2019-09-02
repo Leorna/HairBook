@@ -4,9 +4,17 @@ img {
     height: 35%;
 }
 
+.white-color {
+    color: white;
+}
+
 .bar-color {
     background-color: #f5365c;
     border-style: none;
+}
+
+.form-color, body {
+    background-color: #5e72e4;
 }
 
 #template-content-body {

@@ -20,9 +20,9 @@ session_abort();
 <body>
     <div class="top-bar bar-color">
         <div class="top-bar-left text-center">
-            <h1>HairBook</h1>
-            <h3>Have control about your hair</h3>
-            <p class="lead">Take notes about what you do on it</p>
+            <h1 class="white-color">HairBook</h1>
+            <h3 class="white-color">Have control about your hair</h3>
+            <p class="lead white-color">Take notes about what you do on it</p>
         </div>
 
         
@@ -36,25 +36,27 @@ session_abort();
         
     </div>
 
-    <div style="float:left; " class="tabs-content" data-tabs-content="example-tabs">
+    <br>
+
+    <div style="float:left; " class="form-color tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
             <div class="grid-container">
-                <form method="post" action="php-scripts/signup.php" class="callout text-center">
-                    <h2>Sign Up</h2>
+                <form method="post" action="php-scripts/signup.php" class="form-color callout text-center">
+                    <h2 class="white-color">Sign Up</h2>
                     <div class="floated-label-wrapper">
-                        <label for="user-name">User name</label>
+                        <label class="white-color" for="user-name">User name</label>
                         <input type="text" id="user-name" name="user-name" placeholder="User name">
                     </div>
                     <div class="floated-label-wrapper">
-                        <label for="hair-type">Hair type</label>
+                        <label class="white-color" for="hair-type">Hair type</label>
                         <input type="text" id="hair-type" name="hair-type" placeholder="Hair Type">
                     </div>
                     <div class="floated-label-wrapper">
-                        <label for="pass">Password</label>
+                        <label class="white-color" for="pass">Password</label>
                         <input type="password" id="pass" name="password" placeholder="Password">
                     </div>
                     <div class="floated-label-wrapper">
-                        <label for="pass-confirm">Confirm password</label>
+                        <label class="white-color" for="pass-confirm">Confirm password</label>
                         <input type="password" id="pass-confirm" name="confirm-password" placeholder="Confirm password">
                     </div>
                     <button type="button" class="bar-color button expanded" id="create-account" onclick="showPwordCreate()">Show passwords</button>
@@ -64,14 +66,14 @@ session_abort();
         </div>
         <div class="tabs-panel" id="panel2">
             <div class="grid-container">
-                <form method="post" action="php-scripts/signin.php" class="callout text-center">
-                    <h2>Sign In</h2>
+                <form method="post" action="php-scripts/signin.php" class="form-color callout text-center">
+                    <h2 class="white-color">Sign In</h2>
                     <div class="floated-label-wrapper">
-                        <label for="user-name">User name</label>
+                        <label class="white-color" for="user-name">User name</label>
                         <input type="text" id="full-name" name="user-name" placeholder="User name">
                     </div>
                     <div class="floated-label-wrapper">
-                        <label for="pass">Password</label>
+                        <label class="white-color" for="pass">Password</label>
                         <input type="password" id="passlogin" name="password" placeholder="Password">
                     </div>
                     <button type="button" class="bar-color button expanded" id="login" onclick="showPwordLogin()">Show password</button>
@@ -86,8 +88,8 @@ session_abort();
             <img class="thumbnail" src="hair.webp">
         </div>
         <div class="medium-6 columns medium-pull-6 text-center">
-            <h2>Our selves</h2>
-            <p>We are science computer students, who are learning how to make web sites.</p>
+            <h2 class="white-color">Our selves</h2>
+            <p class="white-color">We are science computer students, who are learning how to make web sites.</p>
         </div>
     </div>
 
@@ -97,6 +99,7 @@ session_abort();
     <script src="foundation-6.5.1-complete/js/app.js"></script>
     <script src="scripts/jquery-3.4.1.js"></script>
     <script src="scripts/effects.js"></script>
+    <script src="scripts/show_hide_password.js"></script>
 </body>
 
 </html>
