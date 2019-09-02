@@ -6,8 +6,7 @@ $db = new DBManager();
 
 $id = $_POST["id"];
 $user = $_POST["user"];
-$title = $_POST["title"];
-$note = $_POST["note"];
+
 
 
 if ($db->there_is_connection()) {

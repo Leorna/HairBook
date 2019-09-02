@@ -26,8 +26,6 @@ if ($db_manager->there_is_connection()) {
                 <form method="post" action="delete.php">
                     <input type="hidden" name="user" value="{$user}">
                     <input type="hidden" name="id" value="{$tuple['id']}">
-                    <input type="hidden" name="title" value="{$tuple['title']}">
-                    <input type="hidden" name="note" value="{$tuple['note']}">
                     <button class='button' style="padding: 10px;">Delete</button>
                 </form>
             </div>
