@@ -23,19 +23,69 @@ session_abort();
             <ul class="menu">
                 <li class="menu-text"><a target="_blank" href="https://github.com/Leorna/Hairbook">HairBook github</a></li>
             </ul>
+            <ul class="menu tabs" data-tabs id="example-tabs">
+                <li style="text-align:center;" class="menu-text tabs-title is-active"><a class="button large hollow" href="#panel1" aria-selected="true">Sign Up</a></li>
+                <li style="text-align:center;" class="menu-text tabs-title"><a class="button large hollow" data-tabs-target="panel2" href="#panel2">Sign In</a></li>
+            </ul>
         </div>
     </div>
+        
     <div class="callout large">
         <div class="row column text-center">
             <h1>HairBook</h1>
             <h3>Have control about your hair</h3>
             <p class="lead">Take notes about what you do on it</p>
-            <a href="login.php" class="button large">Sign In</a>
-            <a href="create-account.php" class="button large hollow">Sign Up</a>
+        </div>
+        
+    </div>
+    
+
+    <div style="float:left; " class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+            <div class="grid-container">
+                <form method="post" action="php-scripts/signup.php" class="callout text-center">
+                    <h2>Sign Up</h2>
+                    <div class="floated-label-wrapper">
+                        <label for="user-name">User name</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="User name">
+                    </div>
+                    <div class="floated-label-wrapper">
+                        <label for="hair-type">Hair type</label>
+                        <input type="text" id="hair-type" name="hair-type" placeholder="Hair Type">
+                    </div>
+                    <div class="floated-label-wrapper">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" name="password" placeholder="Password">
+                    </div>
+                    <div class="floated-label-wrapper">
+                        <label for="pass-confirm">Confirm password</label>
+                        <input type="password" id="pass-confirm" name="confirm-password" placeholder="Confirm password">
+                    </div>
+                    <button type="button" class="button expanded" id="create-account" onclick="showPwordCreate()">Show passwords</button>
+                    <input class="button expanded" type="submit" value="Sign up">
+                </form>
+            </div>
+        </div>
+        <div class="tabs-panel" id="panel2">
+            <div class="grid-container">
+                <form method="post" action="php-scripts/signin.php" class="callout text-center">
+                    <h2>Sign In</h2>
+                    <div class="floated-label-wrapper">
+                        <label for="user-name">User name</label>
+                        <input type="text" id="full-name" name="user-name" placeholder="User name">
+                    </div>
+                    <div class="floated-label-wrapper">
+                        <label for="pass">Password</label>
+                        <input type="password" id="passlogin" name="password" placeholder="Password">
+                    </div>
+                    <button type="button" class="button expanded" id="login" onclick="showPwordLogin()">Show password</button>
+                    <input class="button expanded" type="submit" value="Sign in">
+                </form>  
+            </div> 
         </div>
     </div>
 
-    <div class="row">
+    <div style="margin: 10px;" class="row">
         <div class="medium-6 columns medium-push-6">
             <img class="thumbnail" src="hair.webp">
         </div>
