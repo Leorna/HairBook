@@ -19,7 +19,7 @@ session_abort();
   
 <body>
     <div class="top-bar">
-        <div class="top-bar-left">
+        <div class="top-bar">
             <ul class="menu">
                 <li class="menu-text"><a target="_blank" href="https://github.com/Leorna/Hairbook">HairBook github</a></li>
             </ul>
@@ -27,18 +27,16 @@ session_abort();
                 <li style="text-align:center;" class="menu-text tabs-title is-active"><a class="button large hollow" href="#panel1" aria-selected="true">Sign Up</a></li>
                 <li style="text-align:center;" class="menu-text tabs-title"><a class="button large hollow" data-tabs-target="panel2" href="#panel2">Sign In</a></li>
             </ul>
+
         </div>
-    </div>
-        
-    <div class="callout large">
-        <div class="row column text-center">
+
+        <div class="top-bar-right text-center">
             <h1>HairBook</h1>
             <h3>Have control about your hair</h3>
             <p class="lead">Take notes about what you do on it</p>
         </div>
         
     </div>
-    
 
     <div style="float:left; " class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
