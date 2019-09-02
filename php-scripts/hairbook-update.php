@@ -14,13 +14,11 @@
 
 <body>
 
-    <div class="top-bar" style="margin-bottom: 10px;">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text">HairBook</li>
-                <li class="menu-text"><button><a class="button hairbook-elements" href="hairbook.php">Cancel</a></button></li>
-            </ul>
-        </div>
+    <div class="bar-color top-bar" style="margin-bottom: 10px;">
+        <ul class="bar-color menu">
+            <li class="bar-color menu-text">HairBook</li>
+            <li class="bar-color menu-text"><button><a class="button hairbook-elements" href="hairbook.php">Cancel</a></button></li>
+        </ul>
     </div>
 
     <div class="grid-container">
