@@ -4,7 +4,7 @@ include "database-manager.php";
 
 $db_manager = new DBManager();
 
-$count = 0;
+$there_are_notes = false;
 
 
 if ($db_manager->there_is_connection()) {
@@ -12,7 +12,7 @@ if ($db_manager->there_is_connection()) {
     
     foreach ($db_manager->tuples as $tuple) {
         if ($user == $tuple["name_user"]) {
-            $count += 1;
+            $there_are_notes = true ;
             echo <<<EOT
             <div class='callout text-center'>
                 <p class='menu-text'>Title: {$tuple['title']}</p><p>Note: {$tuple['note']}</p><br>
@@ -33,7 +33,7 @@ if ($db_manager->there_is_connection()) {
         }
     }
     
-    if (!$count) {
+    if (!$there_are_notes) {
         echo <<<EOT
         <div class='callout text-center'>
             <p class="menu-text">I don't have notes yet. Click on "Take a note".</p>

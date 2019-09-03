@@ -3,8 +3,8 @@
 <html class="no-js" lang="en" dir="ltr">
 
 <?php 
-$error = null;
-session_abort(); 
+require "php-scripts/session.php";
+show_error();
 ?>
   
 <head>

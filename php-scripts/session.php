@@ -7,7 +7,8 @@ function show_error() : void {
     $error = $_SESSION["error"];
     
     if ($error) {
-        echo "<script>alert('Error');</script>";
+        echo "<script>alert('$error');</script>";
+        $error = false;
     }
     session_abort();
 }

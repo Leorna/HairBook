@@ -38,18 +38,18 @@ if ($there_is_connection) {
     }
     elseif (!$user_exist) {
         $db_manager->close_connection();
-        $db_manager->header_session("location:../login.php", "User Name Error");
+        $db_manager->header_session("location:../index.php", "User Name Error");
         die();
     }
     else {
         $db_manager->close_connection();
-        $db_manager->header_session("location:../login.php", "Password Error");
+        $db_manager->header_session("location:../index.php", "Password Error");
         die();
     }
 }
 else {
     $db_manager->close_connection();
-    $db_manager->header_session("location:../login.php", "Error");
+    $db_manager->header_session("location:../index.php", "Error");
     die();
 }
 

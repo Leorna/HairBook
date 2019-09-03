@@ -39,23 +39,23 @@ if ($there_is_connection) {
         } 
         else {
             $db_manager->close_connection();
-            $db_manager->header_session("location:../create-account.php", "Error");
+            $db_manager->header_session("location:../index.php", "Error");
             die();
         }
     }
     elseif (!check_user_name()) {
         $db_manager->close_connection();
-        $db_manager->header_session("location:../create-account.php", "User name error");
+        $db_manager->header_session("location:../index.php", "User name error");
         die();
     }
     elseif (!$hair_type) {
         $db_manager->close_connection();
-        $db_manager->header_session("location:../create-account.php", "Hair type error");
+        $db_manager->header_session("location:../index.php", "Hair type error");
         die();
     }
     elseif (!$pword or !($pword == $pword_confirm) or !(strlen($pword) > 5)) {
         $db_manager->close_connection();
-        $db_manager->header_session("location:../create-account.php", "Password error");
+        $db_manager->header_session("location:../index.php", "Password error");
         die();
     } 
 }

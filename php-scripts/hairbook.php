@@ -3,11 +3,8 @@
 <?php
 session_start();
 $user = $_SESSION["name-user"];
-$error = $_SESSION["error"];
-
-if ($error) {
-    echo "<script>alert({$error})</script>";
-}
+require "session.php";
+show_error();
 
 ?>
 
