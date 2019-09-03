@@ -28,7 +28,14 @@ show_error();
             <li class="bar-color"><button class="button hairbook-elements" id="take-note-button">Take a note</button></li>
             <li class="bar-color"><button><a class="button hairbook-elements" href="../index.php">Logout</a></button></li>
             <li class="bar-color">
-                <form method="post" action=""><input class="button hairbook-elements" type="submit" value="Delete account"></form>
+                <form method="post" action="delete-account.php">
+                    <?php
+                    echo <<<EOT
+                    <input type="hidden" name="user" value="$user">
+                    <input class="button hairbook-elements" type="submit" value="Delete account">
+                    EOT;
+                    ?>
+                </form>
             </li>
         </ul>
     </div>
