@@ -13,5 +13,5 @@ CREATE TABLE Notes (
     note VARCHAR(200) NULL,
     name_user VARCHAR(200) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (name_user) REFERENCES Usr(name_user)
+    FOREIGN KEY (name_user) REFERENCES Usr(name_user) ON DELETE CASCADE
 );

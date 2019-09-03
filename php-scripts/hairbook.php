@@ -4,7 +4,7 @@
 session_start();
 $user = $_SESSION["name-user"];
 require "session.php";
-show_error();
+//show_error();
 
 ?>
 

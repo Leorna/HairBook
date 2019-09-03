@@ -2,10 +2,6 @@
 
 <html class="no-js" lang="en" dir="ltr">
 
-<?php 
-require "php-scripts/session.php";
-show_error();
-?>
   
 <head>
     <meta charset="utf-8">
@@ -18,6 +14,7 @@ show_error();
 </head>
   
 <body>
+
     <div class="top-bar bar-color">
         <div class="top-bar-left text-center">
             <h1 class="white-color">HairBook</h1>
@@ -35,6 +32,11 @@ show_error();
         </ul>
         
     </div>
+
+    <?php 
+    require "php-scripts/session.php";
+    //show_error();
+    ?>
 
     <br>
 
