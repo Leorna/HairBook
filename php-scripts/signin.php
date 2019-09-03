@@ -11,9 +11,10 @@ $db_manager = new DBManager();
 function check_password() : bool {
     global $pword;
     global $db_manager;
+    global $user;
 
     foreach ($db_manager->tuples as $tuple) {
-        if ($pword == $tuple["pword"]) {
+        if ($pword == $tuple["pword"] and $user == $tuple["name_user"]) {
             return true;
         }
     }
