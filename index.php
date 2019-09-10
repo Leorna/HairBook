@@ -35,7 +35,7 @@
 
     <?php 
     require "php-scripts/session.php";
-    //show_error();
+    show_error();
     ?>
 
     <br>

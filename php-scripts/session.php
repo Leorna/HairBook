@@ -7,13 +7,7 @@ function show_error() : void {
     $error = $_SESSION["error"];
     
     if (isset($error)) {
-        echo <<<EOT
-        <div data-alert class="alert-box info radius">
-            This is an info alert with a radius.
-            <a href="#" class="close">&times;</a>
-        </div>
-        EOT;
-        $error = false;
+        echo "<p>$error</p>";
     }
     session_abort();
 }

@@ -16,7 +16,7 @@ function check_user_name() : bool {
     global $user_name;
     global $db_manager;
     
-    if ($user_name and (strlen($user_name) > 5) and !user_exist($user_name, $db_manager)) {
+    if ($user_name and !user_exist($user_name, $db_manager)) {
         return true;
     }
 

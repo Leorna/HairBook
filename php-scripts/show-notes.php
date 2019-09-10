@@ -12,7 +12,7 @@ if ($db_manager->there_is_connection()) {
     
     foreach ($db_manager->tuples as $tuple) {
         if ($user == $tuple["name_user"]) {
-            $there_are_notes = true ;
+            $there_are_notes = true;
             echo <<<EOT
             <div class='callout text-center'>
                 <p class='menu-text'>Title: {$tuple['title']}</p><p>Note: {$tuple['note']}</p><br>
