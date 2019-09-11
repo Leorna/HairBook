@@ -30,10 +30,10 @@ require "session.php";
             <li class="bar-color">
                 <form method="post" action="delete-account.php">
                     <?php
-                    echo <<<EOT
-                    <input type="hidden" name="user" value="$user">
-                    <input class="button hairbook-elements" type="submit" value="Delete account">
-                    EOT;
+                    echo "
+                    <input type='hidden' name='user' value='$user'>
+                    <input class='button hairbook-elements' type='submit' value='Delete account'>
+                    ";
                     ?>
                 </form>
             </li>
@@ -44,12 +44,12 @@ require "session.php";
         <form method="post" action="save-notes.php" class="callout text-center">
             <div class="grid-container">
                 <?php
-                echo <<<EOT
-                <input name="user" type="hidden" value="$user">
-                <label for="title">Title</label>
-                <input type="text" name="title" placeholder="Title">
-                <textarea name="note" cols="30" rows="10" placeholder="Take a note"></textarea>
-                EOT;
+                echo "
+                <input name='user' type='hidden' value='$user'>
+                <label for='title'>Title</label>
+                <input type='text' name='title' placeholder='Title'>
+                <textarea name='note' cols='30' rows='10' placeholder='Take a note'></textarea>
+                ";
                 ?>
             </div>
             <input class="button hairbook-elements" type="submit" value="Save">

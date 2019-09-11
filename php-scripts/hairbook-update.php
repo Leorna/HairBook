@@ -28,18 +28,18 @@
         $title = $_POST["title"];
         $note = $_POST["note"];
         
-        echo <<<EOT
-        <form method="post" action="add-changes.php" class="callout text-center">
-            <div class="grid-container">
-                <input type="hidden" name="user" value="{$user}">
-                <input type="hidden" name="id" value="{$id}">
-                <label for="title">Title</label>
-                <input name="title" type="text" value="{$title}">
-                <textarea name="note" cols="30" rows="10">{$note}</textarea>
+        echo "
+        <form method='post' action='add-changes.php' class='callout text-center'>
+            <div class='grid-container'>
+                <input type='hidden' name='user' value='{$user}'>
+                <input type='hidden' name='id' value='{$id}'>
+                <label for='title'>Title</label>
+                <input name='title' type='text' value='{$title}'>
+                <textarea name='note' cols='30' rows='10'>{$note}</textarea>
             </div>
-            <input class="button" type="submit" value="Save">
+            <input class='button' type='submit' value='Save'>
         </form>
-        EOT;
+        ";
         ?>
     </div>
 
